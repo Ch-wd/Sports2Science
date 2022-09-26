@@ -7,8 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<meta charset="utf-8">
 	<meta name = "viewport" content="width = device-width, initial-scale = 1">
+	<link rel="preload" as="image" href="img/background_1_edit.png">
+	<link rel="preload" as="image" href="img/background_2_edit.png">
 </head>
-<body>
+<body onload = "expose()">
 	<div class = "fade-in-effect">
 	</div>
 	<div class = "main-container">
@@ -42,5 +44,13 @@
 				</div>
 		</div>
 	</div>
+
+
+	<script type="text/javascript">
+			x = document.querySelector(".fade-in-effect");
+			function expose()  {
+				x.classList.add("start-effect");
+			};
+	</script>
 </body>
 </html>
