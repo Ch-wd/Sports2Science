@@ -203,55 +203,72 @@ html::-webkit-scrollbar{
 	width: 100%;
 	height: 100vh;
 	position: relative;
+	flex-direction: column;
+	/*justify-content: flex-end;*/
+	align-items: center;
+	/*margin-top: 100px;*/
+	padding-top: 150px;
 	/*justify-content: space-evenly;*/
 }
 
+.second-page-holder{
+	height: inherit;
+	display: flex;
+}
 .second-page-image{
-	/*width: 60vw;*/
-	width: 50%;
-	overflow: hidden;
+    /* width: 60vw; */
+    display: flex;
+    position: relative;
+    width: 40%;
+    overflow: hidden;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .second-page-image img{
-/*	position: absolute;
-    top: 20vh;
-    left: 20vw;
-	box-shadow: #007ca3 14px 13px 6px 0px;
-    height: 65vh*/
-    width: 50vw; 	
+	position: absolute;
+/*    top: 10vh;
+    left: 20vw;*/
+	/*box-shadow: #007ca3 14px 13px 6px 0px;*/
+    /*height: 65vh*/
+    box-shadow: #7b7b7b -20px -16px 1px 0px;
+    width: 20vw; 	
     border-radius: 0 20px 0 20px;
 }
 
 
 
 .second-page-content{
-	color: #fdee2c;
-	margin-bottom: auto;
-	margin-top: 5vw;
-	/*margin-right: auto;*/
-	padding: 50px;
-	width: 50%;
+    color: #fdee2c;
+    /* margin-bottom: auto; */
+    /* margin-top: 5vw; */
+    /* margin-right: auto; */
+    font-style: italic;
+    padding: 50px;
+    width: 50%;
 }
 
 h1{
+	color: white;
+	width: 50%;
 	font-size: 3vw;
 	padding-bottom: 40px;
 }
 
 h1 span{
-	color: #007ca3;
+	color: #f9ef23;
 	/*text-shadow: #fdee2c 2px 2px 2px;*/
 }
 .second-page-content p{
-	font-size: 2em;
-	line-height: 2em;
+	font-size: 1.5vw;
+	line-height: 2vw;
 	color: #fff;
 }
 .footer{
 	width: 100%;
 	height: 180px;
 	background-color: #f9ef23;
-	font-size: 1.5em;
+	font-size: 1.5vw;
 }
 
 .footer-container{
