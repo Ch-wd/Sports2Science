@@ -375,5 +375,45 @@ h1 span{
 /*About page */
 
 .about-page{
+	width: 100%;
 	background-color: black;
+}
+
+.about-container{
+	width: 100%;
+	display: flex;
+	margin-top: 150px;
+	justify-content: center;
+	height: calc(100vh - 250px);
+}
+
+.about-image{
+	width: 30%;
+}
+
+.about-image>img{
+	height: 100%;
+}
+
+.about-content{
+	color: #fff;
+	width: 40%;
+	padding-left: 20px;
+	font-size: 1.5vw;	
+}
+
+.about-container h1{
+	width: 100%;
+	color:#f9ef23;
+	text-align: center;
+}
+
+.about-container span{
+	font-size: 2vw;
+	color:#f9ef23;
+}
+
+.scroll-container{
+	display: flex;
+	justify-content: center;
 }
