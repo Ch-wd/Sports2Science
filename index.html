@@ -5,6 +5,7 @@
 		Sports Clinic and Rehab Center - Sports2Science
 	</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta charset="utf-8">
 	<meta name = "viewport" content="width = device-width, initial-scale = 1">
 	<link rel="preload" as="image" href="img/background_1_edit.png">
@@ -27,7 +28,7 @@
 			</div>
 			<div class = "nav-bar">
 				<div onclick = "dropdown()"class = "hamburger"> 
-					click
+					<span>click</span>
 				</div>
 				<ul class = "nav-items"> 
 					<li> <a href=" #">About</a></li>
@@ -42,16 +43,53 @@
 				<div class = "short-content"> 
 					<p> A seasoned athlete or a casual jogger, you can lean on Sports2Science to get alright</p> 
 				</div>
-				<div class = "cta-button">
+				<a href="#second-page"><div class = "cta-button">
 					<div>Know More</div> 
+				</div></a>
+				<div class = "mouse-scroll-gif">
+					<!-- <img src="img/scroll-down-mouse.gif"> -->
 				</div>
 		</div>
 	</div>
-
-
+	<div class = "second-page-container" id = "second-page">
+		
+	</div>
+	<div class = "footer">
+		<div class = "footer-container">
+			<div class = "links">
+				<ul class = "nav-links">
+					<li> <a href=" #">About</a></li>
+					<li> <a href=" #">Our Work</a></li>
+					<li> <a href=" #">Philosophy</a></li>
+					<li> <a href=" #">Contact</a></li>
+				</ul>
+			</div>
+			<div class = "copyright-container">
+				&#169 2022 Sports2Science
+			</div>
+			<div class = "social-media">
+				<div class = "social-media-title">
+					Follow us on
+				</div>
+				<div class = "social-media-icons">
+					<a class = "fa fa-instagram" href="#"></a>
+					<a class = "fa fa-youtube"href="#"></a>
+					<a class = "fa fa-whatsapp"href="#"></a>
+				</div>
+			</div>
+			<div class = "contacts">
+				<span>+91-7401187466</span>
+				<span>sports2science@gmail.com</span>
+				<span>aakuganesan@gmail.com</span>
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript">
 			x = document.querySelector(".fade-in-effect");
 			y = document.querySelector(".nav-items");
+			z = document.querySelector(".header-container");
+			logo = document.querySelector(".logo-container");
+			title = document.querySelector(".title-container");
 			function expose()  {
 				x.classList.add("start-effect");
 			};
@@ -59,6 +97,21 @@
 			function dropdown(){
 				y.style.display= "block";
 			};
+
+			window.onscroll = function(){
+				if(window.scrollY > 0){
+					z.style.backgroundColor = "#35353591";
+					z.style.height = "100px";
+					logo.style.scale = "0.5";
+					// title.style.scale = "0.8";
+				}
+				else
+				{
+					z.style.backgroundColor = "initial";
+					logo.style.scale = "initial";
+					z.style.height = "intial";
+					// title.style.scale = "initial";
+				}
+			};
 	</script>
 </body>
-</html>
