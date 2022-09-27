@@ -71,7 +71,7 @@ html::-webkit-scrollbar{
 .nav-bar{
 	display: flex;
 	align-items: center;
-	margin-left: auto;
+	margin-left:; auto;
 	flex-direction: column;
 }
 
