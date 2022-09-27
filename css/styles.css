@@ -33,6 +33,13 @@ html::-webkit-scrollbar{
 	z-index: -1;
 }
 .main-container{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.home-page{
 /*	background:linear-gradient(43deg, black, #282828,#2d2d2d);
 	background-color: #000;
 	background-image: url(../img/background_1.png);*/
@@ -41,11 +48,7 @@ html::-webkit-scrollbar{
 	background-repeat: no-repeat !important;
 	background-size: cover	!important;
 	background-blend-mode: overlay !important;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+
 	animation: slides 15s ease-in infinite;
 	transition: background 1s;
 }
@@ -58,7 +61,12 @@ html::-webkit-scrollbar{
 	position: fixed;
 	width: 100%;
 	transition: all 0.5s;
+	z-index: 999;
 
+}
+
+.active{
+	color:#f9ef23 !important;
 }
 .nav-bar{
 	display: flex;
@@ -164,6 +172,8 @@ html::-webkit-scrollbar{
 	box-shadow: #868383 6px 6px 0;
 	border-radius: 10px;		
 	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .mouse-scroll-gif{
@@ -189,10 +199,54 @@ html::-webkit-scrollbar{
 
 .second-page-container{
 	background-color: #000;
+	display: flex;
 	width: 100%;
-	height: calc(100vh - 180px);
+	height: 100vh;
+	position: relative;
+	/*justify-content: space-evenly;*/
 }
 
+.second-page-image{
+	/*width: 60vw;*/
+	width: 50%;
+	overflow: hidden;
+}
+
+.second-page-image img{
+/*	position: absolute;
+    top: 20vh;
+    left: 20vw;
+	box-shadow: #007ca3 14px 13px 6px 0px;
+    height: 65vh*/
+    width: 50vw; 	
+    border-radius: 0 20px 0 20px;
+}
+
+
+
+.second-page-content{
+	color: #fdee2c;
+	margin-bottom: auto;
+	margin-top: 10vw;
+	/*margin-right: auto;*/
+	padding: 50px;
+	width: 50%;
+}
+
+h1{
+	font-size: 3vw;
+	padding-bottom: 40px;
+}
+
+h1 span{
+	color: #007ca3;
+	/*text-shadow: #fdee2c 2px 2px 2px;*/
+}
+.second-page-content p{
+	font-size: 2em;
+	line-height: 2em;
+	color: #fff;
+}
 .footer{
 	width: 100%;
 	height: 180px;
@@ -280,37 +334,29 @@ html::-webkit-scrollbar{
 @keyframes slides{
 	0%{
 		background: url(../img/background_1_edit.png);
-		/*background-repeat: no-repeat;*/
-		/*background-size: cover	;*/
-		/*background-blend-mode: overlay;*/
 		background-position: center;
 	}
 	40%{
 		background: url(../img/background_1_edit.png);
-		/*background-repeat: no-repeat;*/
-		/*background-size: cover	;*/
-		/*background-blend-mode: overlay;*/
 		background-position: center;
 	}	
 	50%{
 		background: url(../img/background_2_edit.png);
-		/*background-repeat: no-repeat;*/
-		/*background-size: cover	;*/
-		/*background-blend-mode: overlay;*/
 		background-position: center;
 	}
 	90%{
 		background: url(../img/background_2_edit.png);
-		/*background-repeat: no-repeat;*/
-		/*background-size: cover	;*/
-		/*background-blend-mode: overlay;*/
 		background-position: center;	
 	}
 	100%{
 		background: url(../img/background_1_edit.png) ;
-		/*background-repeat: no-repeat;*/
-		/*background-size: cover	;*/
-		/*background-blend-mode: overlay;*/
 		background-position: center;
 	}
+}
+
+
+/*About page */
+
+.about-page{
+	background-color: black;
 }
